@@ -19,5 +19,5 @@ function draw(){
 	//image(img,0,0);
 
 	image(sprite.imageArray[sprite.imageIndex],720/2,480/2);
-	// sprite.nextImage();
+	sprite.nextImage();
 }
