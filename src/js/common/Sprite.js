@@ -24,7 +24,7 @@ function Sprite(imagePath, numOfFrames){
 	*/
 	this.nextImage = function (){
 		this.imageIndex += 1;
-		if(this.imageIndex > this.imageArray.length){
+		if(this.imageIndex >= numOfFrames){
 			this.imageIndex = 0;
 		}
 	}
