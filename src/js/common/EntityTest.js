@@ -3,10 +3,10 @@
 */
 
 var filepath = ["/res/player/test/sprite_test", ".png"];
-var sprite;
+var entity;
 
 function preload(){
-	sprite = new Sprite(filepath,5);
+	entity = new Entity(filepath, 5, 360, 240);
 }
 
 function setup(){
@@ -15,10 +15,12 @@ function setup(){
 }
 
 function draw(){
-	image(sprite.currentImage,720/2,480/2);
+	// image(sprite.currentImage,720/2,480/2);
+	entity.draw();
 	update();
 }
 
 function update(){
-	sprite.updateImage();
+	// sprite.updateImage();
+	entity.update();
 }
