@@ -6,12 +6,13 @@ var filepath = ["/res/player/test/sprite_test", ".png"];
 var entity;
 
 function preload(){
-	entity = new Entity(filepath, 5, 360, 240);
+	
 }
 
 function setup(){
 	createCanvas(720, 480);
 	frameRate(60);
+	entity = new Entity(filepath, 5, 360, 240);
 }
 
 function draw(){
