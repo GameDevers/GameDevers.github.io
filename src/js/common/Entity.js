@@ -13,11 +13,11 @@ var namespace = function Entity(pathForSpriteAssest, numberOfFrames, x, y){
 
 	//draw the Sprite at x, y to the canvas
 	var draw = function (){
-		p5.prototype.image(this.sprite.currentFrame,this.x,this.y);
+		p5.prototype.image(sprite.currentFrame,x,y);
 	}
 
 	var update = function(){
-		this.sprite.updatImage();
+		sprite.updateImage();
 	}
 
 	return {
