@@ -8,7 +8,7 @@ var entity;
 function setup(){
 	createCanvas(720, 480);
 	frameRate(60);
-	entity = new Entity(filepath, 5, 360, 240);
+	entity = new namespace(filepath, 5, 360, 240);
 }
 
 function draw(){

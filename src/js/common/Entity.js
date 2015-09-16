@@ -4,19 +4,24 @@
 	to overwrite the default implementation of this file if need be
 */
 
-function Entity(pathForSpriteAssest, numberOfFrames, x, y){
+var namespace = function Entity(pathForSpriteAssest, numberOfFrames, x, y){
 	//take care of extending Sprint
-	this.sprite = new Sprite(pathForSpriteAssest, numberOfFrames);
+	var sprite = new Sprite(pathForSpriteAssest, numberOfFrames);
 
-	this.x = x;
-	this.y = y;
+	var x = x;
+	var y = y;
 
 	//draw the Sprite at x, y to the canvas
-	this.draw = function (){
+	var draw = function (){
 		p5.prototype.image(this.sprite.currentFrame,this.x,this.y);
 	}
 
-	this.update = function(){
+	var update = function(){
 		this.sprite.updatImage();
 	}
-}
+
+	return {
+		update: update,
+		draw:draw
+	};
+};
