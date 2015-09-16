@@ -5,10 +5,6 @@
 var filepath = ["/res/player/test/sprite_test", ".png"];
 var entity;
 
-function preload(){
-	
-}
-
 function setup(){
 	createCanvas(720, 480);
 	frameRate(60);
